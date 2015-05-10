@@ -15,8 +15,8 @@ mkdir $KERNEL_DIR/OUTPUT_Kushan_$DATE/modules
 export ARCH=arm
 export USE_SEC_FIPS_MODE=true
 export CROSS_COMPILE=/home/kushan/toolchain_linaro/bin/arm-eabi-
-export ENABLE_GRAPHITE=true
+# export ENABLE_GRAPHITE=true
 make VARIANT_DEFCONFIG=jf_eur_defconfig kushan_defconfig SELINUX_DEFCONFIG=selinux_defconfig
 make -j$BUILD_JOB_NUMBER
 cp -r $KERNEL_DIR/arch/arm/boot/zImage $OUTPUT/zImage
-find . -name "*.ko" -exec cp {} $$OUTPUT/modules/ \;
+find . -name "*.ko" -exec cp {} $OUTPUT/modules/ \;
