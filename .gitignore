@@ -179,6 +179,7 @@ GTAGS
 /include/config/*/*/*.h
 /out
 /output
+/OUTPUT*
 /.version
 /.config
 /vmlinux*
