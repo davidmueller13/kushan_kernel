@@ -7,7 +7,7 @@
 KERNEL_DIR=$(pwd)
 DATE="`date +"%d-%m-%Y"`"
 BUILD_JOB_NUMBER=`grep processor /proc/cpuinfo|wc -l`
-OUTPUT=OUTPUT_Kushan_$DATE
+OUTPUT=BUILD_$DATE
 
 make clean
 mkdir $KERNEL_DIR/BUILD_$DATE
