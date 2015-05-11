@@ -10,8 +10,8 @@ BUILD_JOB_NUMBER=`grep processor /proc/cpuinfo|wc -l`
 OUTPUT=OUTPUT_Kushan_$DATE
 
 make clean
-mkdir $KERNEL_DIR/OUTPUT_Kushan_$DATE
-mkdir $KERNEL_DIR/OUTPUT_Kushan_$DATE/modules
+mkdir $KERNEL_DIR/BUILD_$DATE
+mkdir $KERNEL_DIR/BUILD_$DATE/modules
 export ARCH=arm
 export USE_SEC_FIPS_MODE=true
 export CROSS_COMPILE=/home/kushan/toolchain_linaro/bin/arm-eabi-
