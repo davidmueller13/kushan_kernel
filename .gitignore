@@ -188,7 +188,5 @@ GTAGS
 /arch/arm64/kernel/vdso/*.dbg
 \#My own Files
 /*.log
-/build_image/zip_files/boot.img
-/build_image/zip_files/system/lib/modules/*
-/build_image/boot.img
-/build_image/output_kernel/Hybridmax*
+/BUILD*
+
