@@ -5,10 +5,13 @@ CONFIG_LOCALVERSION="-Kushan-Kernel-v1.0"
 # Kushan-Kernel
 #
 # CONFIG_FORCE_FAST_CHARGE is not set
+#
+# Faux Sound
 CONFIG_SOUND_CONTROL_HAX_GPL=y
 CONFIG_SOUND_CONTROL_HAX_3_GPL=y
 # CONFIG_MSM_KGSL_SIMPLE_GOV is not set
 # CONFIG_GAMMA_CONTROL is not set
+# Linaro Toolchain
 CT_ARCH_ARCH=""
 CT_ARCH_CPU="cortex-a15"
 CT_ARCH_TUNE="cortex-a15"
